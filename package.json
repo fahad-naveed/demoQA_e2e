@@ -1,0 +1,20 @@
+{
+  "name": "demoqa_e2e",
+  "version": "1.0.0",
+  "description": "Playwright JavaScript automation project for DemoQA",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report:playwright": "playwright show-report",
+    "report:allure": "allure generate ./allure-results --clean -o ./allure-report",
+    "report:allure:open": "allure open ./allure-report"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "allure-commandline": "^2.46.1",
+    "allure-playwright": "^3.15.0"
+  }
+}
