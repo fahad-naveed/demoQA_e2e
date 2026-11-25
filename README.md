@@ -20,6 +20,14 @@ npx playwright install chromium
 - `npm run report:allure` generates an Allure report from `allure-results`.
 - `npm run report:allure:open` opens the generated Allure report.
 
+## CI
+
+GitHub Actions runs the Chromium tests on pushes to `main`, pull requests
+targeting `main`, and manual dispatch. Each run uploads the Playwright and
+Allure reports as downloadable artifacts. The workflow uses GitHub-hosted
+runners and does not require repository secrets for the public SauceDemo test
+account.
+
 Allure results and reports, as well as Playwright reports and test artifacts,
 are generated locally and ignored by Git.
 
