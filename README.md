@@ -1,8 +1,8 @@
 # Playwright E2E Automation
 
 JavaScript end-to-end automation using Playwright Test. The tests cover
-standard-user inventory access, adding a product to the cart, and
-invalid-credential handling.
+login validation, inventory listing and sorting, and cart operations. Specs
+are separated by page in `tests/`.
 
 ## Setup
 
@@ -26,6 +26,8 @@ are generated locally and ignored by Git.
 ## Project layout
 
 - `pages/` — Page Object Model page classes.
-- `tests/` — Playwright test files.
+- `tests/login.spec.js` — login success and validation.
+- `tests/inventory.spec.js` — catalog, sorting, and add-to-cart behavior.
+- `tests/cart.spec.js` — cart contents, quantities, and removal.
 - `test-data/` — reusable test data in JSON.
 - `playwright.config.js` — browser, Sauce Demo base URL, execution, and reporter settings.
