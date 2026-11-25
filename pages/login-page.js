@@ -4,6 +4,7 @@ class LoginPage {
     this.usernameInput = page.getByRole('textbox', { name: 'Username' });
     this.passwordInput = page.getByLabel('Password');
     this.loginButton = page.getByRole('button', { name: 'Login' });
+    this.errorMessage = page.getByRole('alert');
   }
 
   async login(username, password) {

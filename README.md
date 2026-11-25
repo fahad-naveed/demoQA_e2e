@@ -1,7 +1,8 @@
 # Playwright E2E Automation
 
-JavaScript end-to-end automation using Playwright Test. The current example
-tests the Sauce Demo inventory and cart flow.
+JavaScript end-to-end automation using Playwright Test. The tests cover
+standard-user inventory access, adding a product to the cart, and
+invalid-credential handling.
 
 ## Setup
 
@@ -26,5 +27,5 @@ are generated locally and ignored by Git.
 
 - `pages/` — Page Object Model page classes.
 - `tests/` — Playwright test files.
-- `test-data/` — reusable test data.
+- `test-data/` — reusable test data in JSON.
 - `playwright.config.js` — browser, Sauce Demo base URL, execution, and reporter settings.
